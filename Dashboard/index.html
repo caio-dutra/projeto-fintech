@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>MyMoney</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="/Dashboard/css/style.css">
 </head>
 <body>
 
+    <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h1><span class="las la-piggy-bank"></span> MyMoney</h1>
+            <h2><span class="las la-piggy-bank"></span><span>MyMoney</span></h2>
         </div>
 
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href=""><span class="las la-home"></span>
+                    <a href="" class="active"><span class="las la-home"></span>
                     <span>Dashboard</span></a>
                 </li>
                 <li>
@@ -51,13 +52,13 @@
 
     <div class="main-content">
         <header>
-            <h1>
-                <label for="">
+            <h2>
+                <label for="nav-toggle">
                     <span class="las la-bars"></span>
                 </label>
 
                 Dashboard
-            </h1>
+            </h2>
 
             <div class="search-wrapper">
                 <span class="las la-search"></span>
@@ -114,6 +115,237 @@
                     <div>
                         <span class="las la-chart-line"></span>
                     </div>
+                </div>
+            </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Transações</h3>
+
+                            <button>Ver Tudo <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Transferências</td>
+                                            <td>Data</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>00/00/0000</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customers">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Contatos</h3>
+
+                            <button>Ver Tudo <span class="las la-arrow-right">
+                            </span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Caio Dutra</h4>
+                                        <small>Estudante</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div>
+                                    <!-- <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt=""> -->
+                                    <div>
+                                        <h4>Nome</h4>
+                                        <small>Cargo</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div>
+                                    <!-- <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt=""> -->
+                                    <div>
+                                        <h4>Nome</h4>
+                                        <small>Cargo</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div>
+                                    <!-- <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt=""> -->
+                                    <div>
+                                        <h4>Nome</h4>
+                                        <small>Cargo</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div>
+                                    <!-- <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt=""> -->
+                                    <div>
+                                        <h4>Nome</h4>
+                                        <small>Cargo</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div>
+                                    <!-- <img src="/Dashboard/img/2.jpeg" width="40px" height="40px" alt=""> -->
+                                    <div>
+                                        <h4>Nome</h4>
+                                        <small>Cargo</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
